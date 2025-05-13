@@ -200,9 +200,6 @@ header {
 /*#endregion pc 헤더끝  */
 
 /* 커먼 메인 */
-main {
-   background: lightblue;
-}
 main > * {
    margin: 0 auto;
 }

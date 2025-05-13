@@ -203,10 +203,7 @@
 /*#region youtube  */
 .main__youtube {
    max-width: 1800px;
-   height: 620px;
    padding: 0 60px;
-
-   background: yellowgreen;
 }
 
 .main__youtube > div:nth-child(2) {
@@ -222,7 +219,17 @@
 
 .youtube-container > ul {
    display: flex;
+   justify-content: space-between;
+   gap: 10px;
 }
+.youtube-container > ul > li {
+   flex: 1;
+}
+.youtube-container > ul > li > iframe {
+   border-radius: 20px;
+   height: auto;
+}
+
 /*#endregion youtube 끝  */
 
 @media all and (max-width: 1280px) {
@@ -282,5 +289,13 @@
 
    .main__sns .sns-container {
       flex-direction: column;
+   }
+
+   .youtube-container > ul {
+      flex-direction: column;
+      margin-bottom: 120px;
+   }
+   .youtube-container > ul > li > iframe {
+      height: 200px;
    }
 }
