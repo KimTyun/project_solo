@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('./reset.css');
+@import url("./reset.css");
 
 .swipe-btn {
    width: 52px;
@@ -36,7 +36,7 @@ header {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   background-image: url('../images/kfc_sprite.png');
+   background-image: url("../images/kfc_sprite.png");
    background-repeat: no-repeat;
    background-position: right top;
    max-width: 1440px;
@@ -64,7 +64,7 @@ header {
    position: relative;
 }
 .pc-wrap .nav > ul > li::after {
-   content: '';
+   content: "";
    display: inline-block;
    position: absolute;
    width: 1px;
@@ -83,7 +83,7 @@ header {
 }
 
 .pc-wrap .nav > ul > li:nth-last-child(1) a {
-   background-image: url('../images/mini_logo.png');
+   background-image: url("../images/mini_logo.png");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -142,7 +142,7 @@ header {
    transition: opacity 0.5s ease;
 }
 .pc-wrap > .category > ul > li > a > div::after {
-   content: '';
+   content: "";
    height: 0.5px;
    width: 100%;
    position: absolute;
@@ -237,6 +237,9 @@ main > * {
    color: #888;
    font-size: 12px;
 }
+.footer__sitemap > nav > ul > li > ul > li a:hover {
+   text-decoration: underline !important;
+}
 
 .footer__sitemap > nav > ul > li > ul > li:nth-child(1) {
    padding-bottom: 10px;
@@ -274,7 +277,7 @@ footer .footer__pm {
    position: relative;
 }
 .footer__info > div > ul > li:not(:nth-child(1))::after {
-   content: '';
+   content: "";
    background-color: #666;
    width: 1px;
    height: 50%;
@@ -345,7 +348,7 @@ footer .footer__pm {
       height: 120px;
    }
    .pc-wrap {
-      background-image: url('../images/kfc_sprite_sm.png');
+      background-image: url("../images/kfc_sprite_sm.png");
       padding: 0;
    }
    .pc-wrap > .category > ul {
@@ -539,14 +542,14 @@ footer .footer__pm {
       transition: transform 0.3s ease;
    }
    .collapse.show + a .arrow,
-   a[aria-expanded='true'] .arrow {
+   a[aria-expanded="true"] .arrow {
       transform: rotate(180deg);
    }
 
-   ul[id^='collapseExample'] {
+   ul[id^="collapseExample"] {
       background-color: #373029;
    }
-   ul[id^='collapseExample'] > li > a {
+   ul[id^="collapseExample"] > li > a {
       color: white;
       width: 100%;
       display: block;
