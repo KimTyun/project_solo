@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 html,
 body,
 div,
@@ -84,15 +84,15 @@ time,
 mark,
 audio,
 video {
-   margin: 0;
-   padding: 0;
-   border: 0;
-   font-size: 100%;
-   font: inherit;
-   vertical-align: baseline;
-   font-family: 'Noto Sans KR', sans-serif;
-   font-optical-sizing: auto;
-   /* font-family: 'Nanum Gothic Coding', monospace; */
+  vertical-align: baseline;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  /* font-family: 'Nanum Gothic Coding', monospace; */
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -106,43 +106,43 @@ hgroup,
 menu,
 nav,
 section {
-   display: block;
+  display: block;
 }
 body {
-   line-height: 1;
+  line-height: 1;
 }
 ol,
 ul {
-   list-style: none;
+  list-style: none;
 }
 blockquote,
 q {
-   quotes: none;
+  quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-   content: '';
-   content: none;
+  content: "";
+  content: none;
 }
 table {
-   border-collapse: collapse;
-   border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* haseo: 추가 */
 a {
-   text-decoration: none !important;
-   color: black;
+  color: black;
+  text-decoration: none !important;
 }
 
 header,
 footer,
 section {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 iframe {
-   width: 100%;
+  width: 100%;
 }
