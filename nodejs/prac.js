@@ -1,6 +1,11 @@
-// 제출시 예제.txt - > /dev/stdin
-
 const fs = require('fs')
-const input = fs.readFileSync('/dev/stdin').toString().trim()
+const input = fs.readFileSync('./예제.txt').toString().trim().split('\r\n')
 
-console.log(Number(input) - 543)
+input.splice(0, 1)
+console.log(input)
+
+for (let i of input) {
+   var i1 = Number(i.split(' ')[0])
+   var i2 = Number(i.split(' ')[1])
+   console.log(i1 + i2)
+}
