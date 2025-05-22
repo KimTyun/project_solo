@@ -4,9 +4,6 @@ const input = fs
    .toString()
    .trim()
    .split('\r\n')
-   .map(Number)
-   .map((e) => e % 42)
+   .map((e) => Number(e) % 42)
 
-var set1 = new Set(input)
-
-console.log(Array.from(set1).length)
+console.log(new Set(input).size)
