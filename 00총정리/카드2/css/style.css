@@ -1,0 +1,115 @@
+/* 기본 접혀있는 카드 상태 시작 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  margin: 200px auto;
+  width: 600px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
+li {
+  display: inline-block;
+  transition: width 0.5s ease;
+  border-radius: 5px;
+  width: 50px;
+  height: 200px;
+  overflow: hidden;
+}
+
+div[class="img-america"] {
+  position: relative;
+  background-image: url("../images/america.jpg");
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 200px;
+}
+div[class="img-taiwan"] {
+  position: relative;
+  background-image: url("../images/kaohsiung.jpg");
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 200px;
+}
+div[class^="img-swiss"] {
+  position: relative;
+  background-image: url("../images/swiss.jpg");
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.2s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+div[class^="img"] > p {
+  display: inline-block;
+  position: absolute;
+
+  top: 85px;
+  left: -65px;
+  transform: rotate(-90deg);
+  width: 180px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.caption {
+  display: none;
+  color: white;
+  font-weight: bold;
+}
+.caption p {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 기본 접혀있는 카드 상태 끝 */
+/* =============================================== */
+/* 마우스 올렸을 때 카드가 펼친 상태 시작 */
+
+li:hover {
+  width: 300px;
+  text-align: center;
+}
+
+li:hover div[class^="img"] > p {
+  position: static;
+  transform: rotate(0deg);
+  margin-bottom: 40px;
+}
+
+li:hover .caption {
+  display: inline-block;
+}
+
+li:hover .overlay {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+li:hover div[class^="img"] > p {
+  color: white;
+  text-shadow: 2px 2px black;
+}
